@@ -1,0 +1,47 @@
+{
+	"defaultSeverity": "warning",
+	"extends": [
+		"tslint:recommended"
+	],
+	"linterOptions": {
+		"exclude": [
+			"node_modules/**"
+		]
+	},
+	"rules": {
+		"indent": [
+			true,
+			"tab",
+			4
+		],
+		"max-len": [
+			"error",
+			{
+				"code": 300,
+				"ignorePattern": false
+			}
+		],
+		"max-lines": [
+			"error",
+			{
+				"max": 2,
+				"skipBlankLines": false,
+				"skipComments": false
+			}
+		],
+		"noImplicitAny": false,
+		"compilerOptions": {
+			"suppressImplicitAnyIndexErrors": true
+		},
+		"strictFunctionTypes": false,
+		"interface-name": false,
+		"no-consecutive-blank-lines": false,
+		"object-literal-sort-keys": false,
+		"ordered-imports": false,
+		"quotemark": [
+			true,
+			"jsx-single"
+		],
+		"no-console": false
+	}
+}
